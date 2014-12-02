@@ -1,0 +1,23 @@
+Source: libetnaviv
+Priority: extra
+Maintainer: unknown <unknown>
+Build-Depends: debhelper (>= 8.0.0), dh-autoreconf, autotools-dev, libtool, pkg-config, galcore-headers (= 4.6.9.9754)
+Standards-Version: 3.9.3
+Section: libs
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/libetnaviv.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/libetnaviv.git;a=summary
+
+Package: libetnaviv-dev
+Section: libdevel
+Architecture: any
+Depends: libetnaviv (= ${binary:Version})
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: libetnaviv
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, galcore (= 4.6.9.9754)
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
